@@ -23,6 +23,10 @@ transform = Transform3D(1.00656, 0, 0, 0, 1.00656, 0, 0, 0, 1.00656, 0, 1.53701,
 unique_name_in_owner = true
 transform = Transform3D(-0.710364, 0, 0.0137637, 0, 0.710497, 0, -0.0137637, 0, -0.710364, 0.813428, -0.339347, -0.958539)
 
+[node name="Marker3D" type="Marker3D" parent="Camera3D"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.814026, -0.337048, -1.37701)
+
 [node name="Reticle" type="TextureRect" parent="."]
 anchors_preset = 8
 anchor_left = 0.5
@@ -37,3 +41,8 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("3_si71x")
 expand_mode = 1
+
+[node name="Timer" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 0.2
+one_shot = true
